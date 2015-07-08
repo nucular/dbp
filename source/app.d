@@ -1,3 +1,5 @@
+
+// cd .. && dub build
 /*
 DBP - BytePusher VM written in D using the Derelict SDL 2 bindings
 by nucular
@@ -65,7 +67,7 @@ __gshared Uint8[] audioBuffer;
 
 
 // Our audio callback
-extern(C) void audioCallback(void* userdata, Uint8* stream, int len)
+extern(C) nothrow void audioCallback(void* userdata, Uint8* stream, int len)
 {
     if (audioBuffer.length >= len)
     {

@@ -1,0 +1,18 @@
+{
+	"name": "dbp",
+	"description": "BytePusher VM written in D using the Derelict SDL 2 bindings",
+	"copyright": "Copyright © 2015, nucular",
+  "license": "GPL-3.0",
+	"authors": ["nucular"],
+	"dependencies": {
+    "derelict-sdl2": "~>1.9.5"
+	},
+
+  "targetPath": "bin",
+  "targetName": "dbp",
+
+  "copyFiles": [
+    "assets/font.bmp",
+    "assets/start.bp"
+  ]
+}
